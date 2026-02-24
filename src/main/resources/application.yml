@@ -5,6 +5,14 @@ spring:
     user:
       name: oussama
       password: oussama
+  datasource:
+    password: root
+    username: root
+    url: jdbc:mysql://localhost:3307/users
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: create
 logging:
   level:
     org:
