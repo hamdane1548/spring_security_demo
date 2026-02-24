@@ -4,7 +4,6 @@ import lombok.AllArgsConstructor;
 import org.jspecify.annotations.Nullable;
 import org.springframework.context.annotation.Profile;
 import org.springframework.security.authentication.AuthenticationProvider;
-import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.AuthenticationException;
@@ -16,7 +15,7 @@ import org.springframework.stereotype.Component;
 @Component
 @Profile("prod")
 @AllArgsConstructor
-public class UserNamePassworAuthProvider implements AuthenticationProvider {
+public class UsernamePasswordAuthProviderprod implements AuthenticationProvider {
     private final UserDetailsService userDetailsService;
     private final PasswordEncoder passwordEncoder;
     @Override
